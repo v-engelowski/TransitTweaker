@@ -1,0 +1,10 @@
+{
+    "debug": false,                      // set to true to enable debug mode
+    "transitGridSize": {                // new size of transit grid
+        "x": 4,
+        "y": 4,
+        "z": 0
+    },
+    "transitCostMultiplier": 0.5,       // multiplier for the cost of transfering items to the hideout
+    "transitTimeMultiplier": 0.5        // multiplier for the time it takes to transition
+}
