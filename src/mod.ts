@@ -46,9 +46,9 @@ class TransitTweaker implements IPostDBLoadMod {
         //#endregion
 
         //#region Grid size
-        for (const [ _, fenceLevel ] of Object.entries(fenceConfig.Levels)) {
+        for (const [, fenceLevel ] of Object.entries(fenceConfig.Levels)) {
             const oldSize = fenceLevel.TransitGridSize;
-            const newSize: Ixyz = this.config.transitGridSize;
+            const newSize = this.config.transitGridSize;
 
             fenceLevel.TransitGridSize = newSize;
             fenceLevel.TransitGridSize.z = 0;
@@ -61,9 +61,9 @@ class TransitTweaker implements IPostDBLoadMod {
         for (const location of locations) {
             const transits = location.base.transits;
 
-            // Check if transits are null
+            // Check if location has transits
             if (!transits) {
-                this.debugLog(`Transits are null for ${location.base.Name}`);
+                this.debugLog(`${location.base.Name} has no transits. Skipping...`);
                 continue;
             }
 
