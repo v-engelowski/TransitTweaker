@@ -1,10 +1,10 @@
 {
-    "name": "transitweaker",
-    "version": "1.0.0",
+    "name": "transittweaker",
+    "version": "1.1.0",
     "main": "src/mod.js",
     "license": "MIT",
     "author": "MakerMacher",
-    "sptVersion": "~3.10",
+    "sptVersion": "~3.11",
     "loadBefore": [],
     "loadAfter": [],
     "incompatibilities": [],
@@ -15,7 +15,7 @@
         "buildinfo": "node ./build.mjs --verbose"
     },
     "devDependencies": {
-        "@types/node": "^18.18.4",
+        "@types/node": "^22.12.0",
         "@typescript-eslint/eslint-plugin": "6.7.5",
         "@typescript-eslint/parser": "6.7.5",
         "archiver": "^6.0",
@@ -24,7 +24,7 @@
         "ignore": "^5.2",
         "os": "^0.1",
         "tsyringe": "4.8.0",
-        "typescript": "5.2.2",
+        "typescript": "5.8.2",
         "winston": "3.11.0"
     }
 }
